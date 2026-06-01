@@ -16,14 +16,18 @@ function App() {
 
     <PostlistProvider>
       <BrowserRouter>
-        <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
-        <Header />
-        <Routes>
-         
-            <Route path='/' element={<Postlist />} />
-            <Route path='/createpost' element={<Createpost />} />
-        </Routes>
-        {/* {selectedTab === "home" ? <Postlist /> : <Createpost />} */}
+        <div className="min-h-screen bg-gray-100">
+          <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+          <div className="md:ml-64">
+            <Header />
+            <main className="pt-4 px-4 pb-8 sm:px-6 lg:px-8">
+              <Routes>
+                <Route path='/' element={<Postlist />} />
+                <Route path='/createpost' element={<Createpost />} />
+              </Routes>
+            </main>
+          </div>
+        </div>
       </BrowserRouter>
     </PostlistProvider>
 

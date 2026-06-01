@@ -11,7 +11,7 @@ function Sidebar({ selectedTab, setSelectedTab }) {
   return (
 
 
-    <div className="h-full w-64 bg-gray-900 text-white fixed left-0 top-0 p-5 hidden md:block">
+    <div className="w-full md:w-64 bg-gray-900 text-white md:fixed left-0 top-0 p-5 md:h-screen z-20">
 
       <h1 className="text-2xl font-bold mb-10">
         Sidebar
@@ -19,7 +19,7 @@ function Sidebar({ selectedTab, setSelectedTab }) {
 
       <hr className='my-4' />
 
-      <ul className="space-y-6 flex flex-col">
+      <ul className="space-y-4 flex flex-col">
 
         <Link to='/'
           className={`hover:text-blue-400 cursor-pointer transition ${selectedTab === "home" ? "text-blue-400" : ""
@@ -30,7 +30,7 @@ function Sidebar({ selectedTab, setSelectedTab }) {
           Home
         </Link>
 
-        <Link to='/createPost'
+        <Link to='/createpost'
           className={`hover:text-green-400 cursor-pointer transition ${selectedTab === "createpost" ? "text-green-400" : ""
             }`}
           onClick={() => handleOnclick("createpost")}
