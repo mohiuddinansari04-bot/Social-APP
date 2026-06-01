@@ -1,1 +1,10 @@
 /* App-specific styles can go here. Tailwind is imported in src/index.css. */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}

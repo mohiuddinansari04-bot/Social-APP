@@ -8,7 +8,7 @@ function Post({ post }) {
   return (
    
     
-    <div className="relative p-5 mx-4 sm:mx-auto mt-6 mb-5 hover:shadow-xl rounded-xl shadow-lg w-full sm:max-w-3xl bg-white hover:-translate-y-1 transition duration-300">
+    <div className="relative p-5 mx-4 sm:mx-auto mt-6 mb-5 hover:shadow-xl rounded-xl shadow-lg w-full max-w-3xl bg-white hover:-translate-y-1 transition duration-300">
          
       <span 
         className="absolute -top-3 right-4 bg-red-400 text-white p-2 rounded-full cursor-pointer hover:bg-red-500"
