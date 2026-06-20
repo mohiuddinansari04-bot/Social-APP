@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Lodingspinner() {
+  //loding spinner
   return (
     <center>
       <div className="flex justify-center items-center h-screen">
